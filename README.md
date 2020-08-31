@@ -47,9 +47,7 @@ S3 bucket is used by kubernetes to persist cluster state and so, create any S3 b
 Head over to aws Route53 and create a private hosted zone
 
 Choose a name of your choice - navin205_k8s.in
-
 Choose type as private hosted zone for VPC
-
 Select default vpc in the region you are setting up your cluster
 
 ### 7 Configure environment variables.
@@ -61,7 +59,6 @@ Open .bashrc file
 Add following content into .bashrc, you can choose any arbitary name for cluster and make sure buck name matches the one you created in previous step.
 
 export KOPS_CLUSTER_NAME=navin205_k8s.in
-
 export KOPS_STATE_STORE=s3://navin205_k8s.in.k8s
 
 Then running command to reflect variables added to .bashrc
